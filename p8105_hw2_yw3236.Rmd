@@ -3,8 +3,14 @@ title: "p8105_hw2_yw3236"
 output: github_document
 ---
 
-```{r}
+```{r set up library, include = FALSE}
 library(tidyverse)
 ```
+
+```{r import data}
+transit_data = read_csv(file = "./NYC_Transit_Subway_Entrance_And_Exit_Data.csv")
+```
+
+
 
 

@@ -2,6 +2,7 @@
 title: "p8105_hw2_yw3236"
 output: github_document
 ---
+# Problem 1
 
 ```{r set up library, include = FALSE}
 library(tidyverse)
@@ -15,8 +16,13 @@ transit_data =
 ```
 
 
+# Problem 2
 
-
+```{r}
+trash_data = 
+  readxl::read_excel("./HealthyHarborWaterWheelTotals2017-9-26.xlsx") %>% 
+  janitor::clean_names() 
+```
 
 
 

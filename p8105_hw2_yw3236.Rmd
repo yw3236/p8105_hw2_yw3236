@@ -7,9 +7,25 @@ output: github_document
 library(tidyverse)
 ```
 
-```{r import data}
-transit_data = read_csv(file = "./NYC_Transit_Subway_Entrance_And_Exit_Data.csv")
+```{r}
+transit_data = 
+  read_csv(file = "./NYC_Transit_Subway_Entrance_And_Exit_Data.csv") %>% 
+  janitor::clean_names() %>% 
+  select(., "line", "station_name", "station_latitude", "station_longitude", "route1":"route11", "entry", "vending", "entrance_type", "ada")
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
